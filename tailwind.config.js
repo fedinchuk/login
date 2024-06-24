@@ -11,7 +11,7 @@ export default {
       black,
       transparent,
       white,
-      'primary': '#0FE0B8',
+      primary: '#0FE0B8',
       gray: {
         400: '#34343A',
         500: '#2C2D31',
@@ -32,12 +32,17 @@ export default {
     },
   },
   plugins: [
-    plugin(function ({ addUtilities }) {
+    plugin(function ({ addComponents, addUtilities }) {
+      addComponents({
+        '.btn': {
+          display:  'inline-block',
+        },
+      }),
       addUtilities({
         '.hide': {
           display: 'none',
         },
       })
-    })
+    }),
   ],
 }
