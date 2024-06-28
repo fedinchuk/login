@@ -1,4 +1,4 @@
-import styles from './core.module.scss'
+import styles from './Core.module.scss'
 import './output.css'
 import './index.css'
 import './App.css'
