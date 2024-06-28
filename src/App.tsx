@@ -1,26 +1,12 @@
-import styles from './Core.module.scss'
-import './output.css'
-import './index.css'
-import './App.css'
-
 function App() {
-  return (
-    <form className="br-primary/5 p-10 rounded-lg border
-    border-solid border-white/5 shadow-lg">
-      <h1 className="text-6x1 font-bold mb-5">Login</h1>
-
-      <input className={styles.field} type='text'
-      placeholder="Enter email:" />
-
-      <input
-        className={styles.field}
-        type="password"
-        placeholder="Enter password:"
-      />
-
-      <button className="dark:bg-white inline-block">Submit</button>
-    </form>
-  )
+	return (
+		<div className='p-5 border-solid border-2 border-green-500 rounded-lg bg-green-50/5'>
+			<div>
+				<h1 className='text-7xl text-green-500 font-medium'>Hello world!</h1>
+			</div>
+			<div className='mt-10 w-2/3 mx-auto'>footer</div>
+		</div>
+	)
 }
 
 export default App
